@@ -1,4 +1,4 @@
-export const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://seatora.app';
+export const SITE = process.env.NEXT_PUBLIC_SITE_URL || 'https://seatoraa.vercel.app';
 export const EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'hello@seatora.app';
 export type Pg = { slug: string; kind: 'seating' | 'budget' | 'text'; title: string; desc: string; h1: string; intro: string; body: [string, string][]; faqs?: [string, string][] };
 
