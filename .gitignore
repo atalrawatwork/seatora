@@ -1,0 +1,34 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js build outputs
+/.next/
+/out/
+
+# Production build artifacts
+/build
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment variables (Isme aapke secret keys hote hain, inhe kabhi git par push nahi karna chahiye)
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel deployment configuration
+.vercel
+
+# TypeScript build info
+*.tsbuildinfo
+next-env.d.ts
+
+# OS generated files
+.DS_Store
+Thumbs.db
