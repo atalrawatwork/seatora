@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   description: 'Free wedding planning tools: seating chart maker, table plan maker and budget calculator. No sign-up needed.',
   alternates: { canonical: '/' },
   openGraph: { siteName: 'Seatora', type: 'website', title: 'Seatora – Free Wedding Planning Tools' },
+  verification: {
+    google: "5qBtk0UUBU7xmo0ZSVbWTw0ZIrr5zAVl_DSOP_rDSa8", 
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
