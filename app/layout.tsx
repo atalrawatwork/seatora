@@ -4,6 +4,8 @@ import { Cormorant_Garamond, Manrope } from 'next/font/google';
 import './globals.css';
 import { SITE } from '@/lib/site';
 import Logo from '@/components/Logo';
+//google analytics
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const serif = Cormorant_Garamond({ subsets: ['latin'], weight: ['500', '600', '700'], variable: '--f-serif' });
 const sans = Manrope({ subsets: ['latin'], variable: '--f-sans' });
@@ -38,6 +40,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div><strong>Tools</strong><Link href="/wedding-seating-chart-maker/">Seating Chart Maker</Link><Link href="/wedding-table-plan-maker/">Table Plan Maker</Link><Link href="/wedding-budget-calculator/">Budget Calculator</Link></div>
           <div><strong>Company</strong><Link href="/about/">About</Link><Link href="/contact/">Contact</Link><Link href="/privacy-policy/">Privacy Policy</Link><Link href="/terms/">Terms</Link><Link href="/cookie-policy/">Cookie Policy</Link></div>
         </div></footer>
+
+              <GoogleAnalytics gaId="G-0WG6PSKT42" />
+
       </body>
     </html>
   );
