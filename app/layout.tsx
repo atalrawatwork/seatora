@@ -4,6 +4,7 @@ import { Cormorant_Garamond, Manrope } from 'next/font/google';
 import './globals.css';
 import { SITE } from '@/lib/site';
 import Logo from '@/components/Logo';
+import Script from 'next/script';
 //google analytics
 import { GoogleAnalytics } from '@next/third-parties/google';
 
@@ -41,9 +42,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div><strong>Company</strong><Link href="/about/">About</Link><Link href="/contact/">Contact</Link><Link href="/privacy-policy/">Privacy Policy</Link><Link href="/terms/">Terms</Link><Link href="/cookie-policy/">Cookie Policy</Link></div>
         </div></footer>
 
-              <GoogleAnalytics gaId="G-0WG6PSKT42" />
+             <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`window.clarity=window.clarity||function(){(clarity.q=clarity.q||[]).push(arguments)};
+          const t=document.createElement("script");t.async=1;t.src="https://clarity.ms";
+          document.head.appendChild(t);`}
+        </Script>
+      
 
       </body>
+       <GoogleAnalytics gaId="G-0WG6PSKT42" />
     </html>
   );
 }
